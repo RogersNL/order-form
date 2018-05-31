@@ -9,7 +9,7 @@ $("#orderForm").submit(function(event){
   var cityInput = $("input#addressCity").val();
   var stateInput = $("select#addressState").val();
   var zipInput = $("input#addressZip").val();
-  var sizeInput = $("select:radio[name=size]:checked").val();
+  var sizeInput = $("input:radio[name=size]:checked").val();
   var numberInput = $("input#numberOfShirts").val();
 
   $(".confirmName").text(nameInput);
