@@ -11,44 +11,69 @@
 <body>
 
   <div class="container">
-    <form id="orderForm">
-      <div class="form-group">
-        <label for="name">Your Name</label>
-        <input id="name" class="form-control" type="text">
-      </div>
+    <div class="well">
+      <h1>Looks like you are buying one or more shirts, we just need a little info before we send that your way:</h1>
+      <img src="img/True-Story.png">
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
 
-      <div class="form-group">
-        <label for="addressStreet">Your Address</label>
-        <input id="name" class="form-control" type="text">
-      </div>
+        <div class="form-group">
+          <label for="addressStreet">Street Address</label>
+          <input id="addressStreet" class="form-control" type="text">
+        </div>
 
-      <div class="form-group">
-        <label for="addressCity">Your Address</label>
-        <input id="name" class="form-control" type="text">
-      </div>
+        <div class="form-group">
+          <label for="addressCity">City</label>
+          <input id="addressCity" class="form-control" type="text">
+        </div>
 
-      <div class="form-group">
-        <label for="addressState">Your Address</label>
-        <input id="name" class="form-control" type="text">
-      </div>
+        <div class="form-group">
+          <label for="addressState">State</label>
+          <input id="addressState" class="form-control" type="text">
+        </div>
 
-      <div class="form-group">
-        <label for="addressZip">Your Address</label>
-        <input id="name" class="form-control" type="number">
-      </div>
+        <div class="form-group">
+          <label for="addressZip">Zip</label>
+          <input id="addressZip" class="form-control" type="text">
+        </div>
 
-      <label for="product">Size</label>
-      <select class="form-control" id="product">
-        <option>XS</option>
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-      </select>
+        <label for="product">Size</label>
+        <select class="form-control" id="product">
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+          <option>XXXL</option>
+          <option>XXXXL</option>
+          <option>XXXXXL</option>
+          <option>XXXXXXL</option>
+        </select>
 
-      <button type="submit" class="btn">Order!</submit>
-    </form>
+        <div class="form-group">
+          <label for="numberOfShirts">Number of Shirts</label>
+          <input id="numberOfShirts" class="form-control" type="number">
+        </div>
+
+        <button type="submit" class="btn btn-success">Order!</button>
+      </form>
+    </div>
 
     <div id="orderConfirmation">
+      <h1>Success!</h1>
+      <h2>Order Summary</h2>
+      <div class="well">
+        <p>Thanks, <span class="confirmName"></span>, for your order
+          of <span class="confirmNumber"></span> <span class="confirmSize"></span>
+           Dank Vibez (TM) Shirts!</p>
+        <p>We will have those sent to:</p>
+        <p><span class="confirmStreet"></span></p>
+        <p><span class="confirmCity"></span>, <span class="cofirmState"></span> <span class="confirmZip"></span></p>
+      </div>
 
   </div>
 
